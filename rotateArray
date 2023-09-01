@@ -1,0 +1,15 @@
+public static int[] rotateArray(int n, int[] arr){
+        int[] newArr = new int[arr.length];
+
+        for (int count = 0; count<arr.length;count++){
+            if(n>=newArr.length){
+               newArr[count]=arr[n-newArr.length];
+            } else {
+                newArr[count] = arr[n];
+            }
+            n++;
+
+        }
+        return newArr;
+
+    }
